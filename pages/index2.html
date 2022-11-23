@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="header">
+<div class="container">
+    <h1 class="Вебинар"><center>ВЕБИНАР</center></h1>
+</div>
+    </header>
+    <main>
+        <div class="container">
+            <h2 class="forms">Заявка на тех.осмотр</h2>
+            <form>
+                <fieldset>
+                            <legend>Пожалуйста опишите свой автомобиль</legend>
+                            Марка автомобиля<input type="text" name="trademark" placeholder="Введите марку авто">
+                    
+                        <br>
+                        <br>
+                        Модель <input type="text" name="model" placeholder="Введите модель" required="required">
+                    
+                        <p>Коробка передач</p>
+                        АКП <input type="radio" name="gaer" value="auto" checked>
+                        МКП <input type="radio" name="gear" value="hand">
+                    <br>    
+                    <br>
+                    Необходимо проверить
+                    <br>
+                        <input type="checkbox" name="type1" value="brake">Тормозная жидкость<br>
+                        <input type="checkbox" name="type1" value="shhod">Сход/Развал<br>
+                        <input type="checkbox" name="type1" value="oil">Масло<br>
+                        <input type="checkbox" name="type1" value="airbck">Подвеска<br>
+                        <input type="checkbox" name="type1" value="ogygen">Охлаждающая жидкость<br>
+                    <br>
+                    Какое масло заливать?
+                    <select name="oillist">
+                        <option label=""></option>
+                        <option label="Motul">Motul</option>
+                        <option label="Shell">Shell</option>
+                        <option label="Castrol" selected>Castrol</option>
+                        <option label="Oleina" disabled>Oleina</option>
+                    </select>
+                    <br>
+                    <br>
+                    Цвет покраски суппортов
+                    <br>
+                    <input type="color" list="colorlist" value="#cc0000">
+                    <datalist id="colorlist">
+                        <option value="#ff000" label="Красный"></option>
+                        <option value="#08000" label="Зеленый"></option>
+                        <option value="black" label="Черный"></option>
+                    </datalist>
+                   <br>
+                Дата визита
+                <br>
+                <input type="date" name="visit" value="2022-11-20" min="2022-11-18" max="2022-11-26">
+                <br>
+                Ваша почта
+                <input type="email" name="mail">
+                <br>
+                <input type="submit">
+                <br>
+                Номер телефона
+                <br>
+                <input type="tel" name="phone">
+                <br>
+                <input type="submit" name="submit">
+                <input type="reset">
+        </fieldset>
+        <p>Прогресс техосмотра</p>
+        <progress value="25" max="100"></progress>    
+        <fieldset>  
+            <legend>Обратная связь</legend>
+            Оцените качество услуг<br>
+            <input type="range" min="0" max="10" step="1" value="7" name="rating">
+            <br>
+            Что бы хотелось улучшить?<br>
+            <textarea name="comment" id="" cols="50" rows="7" placeholder="Ваши предложения"> 
+            </textarea>
+            <br>
+            <input type="submit">
+            <br>
+            Порекомендуете наш сервис
+            <label for="yes">Да</label>
+            <input type="radio" id="yes" name="choise" value="yes" checked>
+            <label for="no">Нет</label>
+            <input type="radio" id="no" name="choise" value="no">
+        </fieldset>
+        <ol type="I">
+            <li></li>
+            <li></li>
+            <li></li>
+        </ol>
+        </form>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footer-block">
+            <p class="footer-text">Skillfactory</p>
+        </div>
+    </footer>
+</body>
+</html>
